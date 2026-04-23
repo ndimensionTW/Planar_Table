@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planar Table｜產品特色</title>
+  <meta name="description" content="Planar Table 官方網站提案版，介紹產品定位、功能特色、商業模式、團隊與發展藍圖。">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body data-page="product">
+  
+<header class="site-header">
+  <div class="container inner">
+    <a class="brand" href="index.html" aria-label="Planar Table 首頁">
+      <span class="brand-mark"><svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<path d="M32 7L51 20V44L32 57L13 44V20L32 7Z" stroke="#F0C66B" stroke-width="2.8"/>
+<path d="M32 7V57M13 20L51 44M51 20L13 44" stroke="#A9D6FF" stroke-width="2.2" opacity=".9"/>
+<circle cx="32" cy="32" r="5.5" fill="#4AA7FF" opacity=".9"/>
+</svg></span>
+      <span class="brand-copy">
+        <strong>PLANAR TABLE</strong>
+        <span>口袋裡的 AI 冒險桌遊</span>
+      </span>
+    </a>
+    <nav class="nav" data-nav>
+      <a href="index.html" data-page-link="index">首頁</a>
+      <a href="product.html" data-page-link="product">產品特色</a>
+      <a href="market.html" data-page-link="market">市場與商模</a>
+      <a href="team.html" data-page-link="team">團隊介紹</a>
+      <a href="roadmap.html" data-page-link="roadmap">藍圖與策略</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-secondary small desktop-only" href="docs/DND平台簡報.pdf" target="_blank" rel="noopener">下載簡報</a>
+      <button class="menu-toggle" data-menu-toggle aria-label="切換選單">☰</button>
+    </div>
+  </div>
+</header>
+
+  <main>
+    
+<section class="hero hero-compact">
+  <div class="container reveal">
+    <div class="eyebrow">Product</div>
+    <h1 class="section-title">產品特色與 MVP 體驗設計</h1>
+    <p class="page-lead">Planar Table 的產品核心不是單純聊天，而是以桌遊化介面承接 AI 敘事，把擲骰、狀態、物品、角色資訊與劇情推進變成可視化遊戲流程。</p>
+    <div class="page-nav-links">
+      <a href="#engine">雙核引擎</a>
+      <a href="#ui">介面展示</a>
+      <a href="#mvp">MVP 功能</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="engine">
+  <div class="container">
+    <div class="eyebrow reveal">Dual Engine</div>
+    <h2 class="section-title reveal">把「故事感」與「規則感」拆開處理</h2>
+    <p class="section-desc reveal">這是官網最值得被看見的技術護城河：右腦負責敘事沉浸，左腦負責理性運算，避免 AI 在血量、檢定與判定邏輯上失真。</p>
+    <div class="dual-engine" style="margin-top:28px;">
+      <article class="engine-card reveal">
+        <div class="engine-title"><span class="engine-dot" style="background:#80c2ff"></span><strong>敘事層 · Narrative Layer</strong></div>
+        <p>由 Gemini / Grok 等模型生成場景描述、NPC 對話與劇情氛圍，讓玩家感受到像被帶團一樣的沉浸式敘事。</p>
+        <ul>
+          <li>環境描述與故事分支</li>
+          <li>角色互動與氛圍營造</li>
+          <li>支援高自由度文字輸入</li>
+        </ul>
+      </article>
+      <article class="engine-card reveal">
+        <div class="engine-title"><span class="engine-dot" style="background:#f0c66b"></span><strong>邏輯層 · Logic Layer</strong></div>
+        <p>以 TypeScript 後端、資料庫與工具流程來處理骰子檢定、HP 扣減、裝備資料與結果落盤，讓 AI 僅負責解釋，不負責竄改結果。</p>
+        <ul>
+          <li>規則判定與數值可信度</li>
+          <li>存檔與角色進度管理</li>
+          <li>遊戲裁判的一致性</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="ui">
+  <div class="container">
+    <div class="eyebrow reveal">Interface</div>
+    <h2 class="section-title reveal">桌遊化 UI：不是對話框，而是一張可互動的冒險桌</h2>
+    <div class="gallery-grid" style="margin-top:28px;">
+      <figure class="image-card reveal">
+        <img src="assets/images/product_desktop.jpg" alt="Planar Table 電腦版介面展示">
+        <figcaption class="caption">電腦版主介面：將劇情推進、角色資訊與物品欄整合到單一版面。</figcaption>
+      </figure>
+      <figure class="image-card reveal">
+        <img src="assets/images/product_mobile.jpg" alt="Planar Table 手機版介面展示">
+        <figcaption class="caption">手機版主介面：切分成冒險、狀態與功能頁，凸顯「口袋裡的桌遊」。</figcaption>
+      </figure>
+      <figure class="image-card reveal">
+        <img src="assets/images/product_onboarding.jpg" alt="Planar Table 創角與劇本選擇畫面">
+        <figcaption class="caption">創角與劇本選擇：承接新手玩家、降低規則學習門檻。</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="mvp">
+  <div class="container two-up">
+    <article class="panel reveal">
+      <h3>MVP 已完成的核心功能</h3>
+      <ul>
+        <li>互動式創角嚮導：把繁複的 D&D 規則拆成可理解的步驟。</li>
+        <li>劇本模組選擇器：讓玩家快速開始，不必自行設定一切。</li>
+        <li>混合式物品管理：AI 臨場生成裝備後，仍能被系統數值化記錄。</li>
+        <li>動態儀表板：血量、角色等級與持有物品即時同步。</li>
+      </ul>
+    </article>
+    <article class="panel reveal">
+      <h3>未來可再加進官網的展示模組</h3>
+      <ul>
+        <li>互動式世界觀地圖或劇本宇宙頁。</li>
+        <li>實機 Demo 影片區與社群精華剪輯。</li>
+        <li>創作者劇本市集預覽頁。</li>
+        <li>登入/預約候補表單與媒體報導區塊。</li>
+      </ul>
+      <p class="note">目前這版先以靜態網站完成品牌與資訊層，方便之後再往產品型網站延伸。</p>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container callout reveal">
+    <div>
+      <div class="eyebrow">Explore Next</div>
+      <h2 style="margin:0;">產品介紹之後，下一步最適合接市場與商業模式頁。</h2>
+      <p>這樣訪客會先理解體驗，再理解為什麼這個體驗有市場、能變現、也具備擴張性。</p>
+    </div>
+    <div class="callout-actions">
+      <a class="btn btn-primary" href="market.html">前往市場與商模</a>
+      <a class="btn btn-secondary" href="roadmap.html">看 Roadmap</a>
+    </div>
+  </div>
+</section>
+
+  </main>
+  
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <strong>PLANAR TABLE</strong>
+      <div>把 AI 敘事、規則運算與桌遊介面整合為可隨時開局的數位冒險體驗。</div>
+    </div>
+    <div class="footer-links">
+      <a href="docs/01_創業營運計畫書_Planar_Table.pdf" target="_blank" rel="noopener">計畫書</a>
+      <a href="docs/DND平台簡報.pdf" target="_blank" rel="noopener">簡報</a>
+      <a href="team.html">團隊</a>
+      <a href="roadmap.html">Roadmap</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="assets/js/main.js"></script>
+  
+</body>
+</html>
