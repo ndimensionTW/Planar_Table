@@ -3,166 +3,171 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Planar Table｜首頁</title>
-  <meta name="description" content="Planar Table 官方網站提案版，介紹產品定位、功能特色、商業模式、團隊與發展藍圖。">
+  <title>Planar Table｜第 N 維度 AI 冒險桌</title>
+  <meta name="description" content="Planar Table 高度客製化官方網站：AI DM、雙核引擎、繁中在地化與桌遊式互動介面。">
+  <meta name="theme-color" content="#090B18">
+  <link rel="icon" href="assets/images/planar-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/pages.css">
 </head>
 <body data-page="index">
+  <div class="site-aurora" aria-hidden="true"></div>
   
 <header class="site-header">
-  <div class="container inner">
+  <div class="container header-inner">
     <a class="brand" href="index.html" aria-label="Planar Table 首頁">
-      <span class="brand-mark"><svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-<path d="M32 7L51 20V44L32 57L13 44V20L32 7Z" stroke="#F0C66B" stroke-width="2.8"/>
-<path d="M32 7V57M13 20L51 44M51 20L13 44" stroke="#A9D6FF" stroke-width="2.2" opacity=".9"/>
-<circle cx="32" cy="32" r="5.5" fill="#4AA7FF" opacity=".9"/>
+      <span class="brand-mark"><svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <linearGradient id="m" x1="10" y1="6" x2="66" y2="68" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B9F7FF"/><stop offset=".48" stop-color="#E7C064"/><stop offset="1" stop-color="#B879FF"/>
+    </linearGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <path d="M36 5.5 62.5 20v32L36 66.5 9.5 52V20L36 5.5Z" stroke="url(#m)" stroke-width="2.5"/>
+  <path d="M36 5.5v61M9.5 20 62.5 52M62.5 20 9.5 52" stroke="#8DE7D2" stroke-width="1.4" opacity=".62"/>
+  <path d="M22 36c5.8-7.4 20.2-7.4 28 0-6.6 8.7-21.7 8.7-28 0Z" fill="#091226" stroke="#E7C064" stroke-width="1.6" filter="url(#g)"/>
+  <circle cx="36" cy="36" r="5.8" fill="#B9F7FF" opacity=".9"/>
+  <path d="M36 24 41.6 31.8 50 32.8 44.2 39.2 45.8 48 36 43.6 26.2 48 27.8 39.2 22 32.8 30.4 31.8 36 24Z" stroke="#B879FF" stroke-width="1.2" opacity=".72"/>
 </svg></span>
       <span class="brand-copy">
         <strong>PLANAR TABLE</strong>
-        <span>口袋裡的 AI 冒險桌遊</span>
+        <span>第 N 維度的 AI 冒險桌</span>
       </span>
     </a>
-    <nav class="nav" data-nav>
+    <nav class="nav" data-nav aria-label="主要導覽">
       <a href="index.html" data-page-link="index">首頁</a>
       <a href="product.html" data-page-link="product">產品特色</a>
+      <a href="market.html" data-page-link="market">市場商模</a>
       <a href="team.html" data-page-link="team">團隊介紹</a>
+      <a href="roadmap.html" data-page-link="roadmap">發展藍圖</a>
     </nav>
     <div class="header-actions">
-      <button class="menu-toggle" data-menu-toggle aria-label="切換選單">☰</button>
+      <a class="btn btn-compact btn-primary" href="product.html#demo">體驗設計</a>
+      <button class="menu-toggle" data-menu-toggle aria-label="切換選單"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
 
   <main>
-    
-<section class="hero">
+<section class="hero hero-home">
   <div class="container hero-grid">
     <div class="hero-copy reveal">
-      <div class="kicker">PLANAR TABLE · THE AI BOARD GAME IN YOUR POCKET</div>
-      <h1>把 <span class="text-gradient">AI 地下城主</span> 放進口袋，<br>讓冒險隨時開局。</h1>
-      <p>Planar Table 將傳統 TRPG 的自由敘事、規則判定與桌遊儀式感整合到同一個數位體驗中。核心主張是 30 秒無痛開局、單人也能跑團、原生繁體中文在地化，以及以雙核引擎確保劇情沉浸與數值公平。</p>
+      <div class="kicker"><span class="kicker-dot"></span>AI Dungeon Master · Taiwanese Fantasy · Solo-first</div>
+      <h1>不是打開聊天框，<br>是展開一張<span class="text-gradient">會回應你的異界桌</span>。</h1>
+      <p>Planar Table 把 TRPG 的敘事自由、D&D 5e 的規則判定與桌遊桌面的儀式感整合成「30 秒開局」的數位冒險。AI 負責世界的呼吸，程式負責骰子與數值，玩家只需要說出下一步。</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="product.html">看產品特色</a>
-        <a class="btn btn-secondary" href="team.html">認識團隊</a>
+        <a class="btn btn-primary" href="product.html#demo">看冒險桌介面</a>
+        <a class="btn btn-secondary" href="market.html">了解商業設計</a>
       </div>
-      <div class="badge-row">
-        <span class="badge"><strong>30 秒</strong> 無痛開局</span>
-        <span class="badge"><strong>24/7</strong> AI 虛擬 DM</span>
-        <span class="badge"><strong>繁中原生</strong> 在地化體驗</span>
-      </div>
-      <div class="stat-row">
-        <span class="pill"><strong>單人冒險系統</strong> 適配碎片化時間</span>
-        <span class="pill"><strong>雙核引擎</strong> 敘事與規則分離</span>
+      <div class="badge-row" aria-label="核心特色">
+        <span class="badge"><i>✦</i><strong>30 秒</strong>創角入桌</span>
+        <span class="badge"><i>◈</i><strong>雙核裁判</strong>敘事 / 規則分離</span>
+        <span class="badge"><i>◎</i><strong>繁中原生</strong>在地劇本宇宙</span>
       </div>
     </div>
-    <div class="hero-card reveal">
-      <div class="poster">
-        <img src="assets/images/cover.jpg" alt="Planar Table 封面海報">
+    <aside class="hero-board reveal" aria-label="Planar Table 異界桌視覺">
+      <div class="board-toolbar"><span>LIVE TABLE</span><span>v1.2.0</span></div>
+      <img src="assets/images/hero-table.svg" alt="Planar Table 異界冒險桌插畫">
+      <div class="board-status">
+        <span><strong>DM</strong> 生成場景</span>
+        <span><strong>RULE</strong> 擲骰落盤</span>
+        <span><strong>PLAYER</strong> 做任何事</span>
       </div>
-      <div class="meta">
-        <div class="mini-stat">
-          <strong>MVP</strong>
-          <span>已完成 v1.2.0 內測核心循環</span>
-        </div>
-        <div class="mini-stat">
-          <strong>Dual Engine</strong>
-          <span>LLM 敘事 + 規則運算後端</span>
-        </div>
-        <div class="mini-stat">
-          <strong>Digital Tabletop</strong>
-          <span>跨裝置的桌遊化 UI</span>
-        </div>
-      </div>
-    </div>
+    </aside>
   </div>
 </section>
 
 <section class="section section-tight">
   <div class="container metric-strip reveal">
-    <div class="metric"><strong data-counter="30" data-suffix="秒">0</strong><span>新手可完成開局體驗</span></div>
-    <div class="metric"><strong data-counter="24" data-suffix="h">0</strong><span>AI 主持人全天候在線</span></div>
-    <div class="metric"><strong data-counter="4">0</strong><span>首波核心客群輪廓</span></div>
-    <div class="metric"><strong data-counter="300" data-suffix=" NTD/月">0</strong><span>Pro 訂閱目標定價</span></div>
+    <div class="metric"><strong data-counter="30" data-suffix="秒">0</strong><span>新手完成第一個角色</span></div>
+    <div class="metric"><strong data-counter="24" data-suffix="/7">0</strong><span>AI DM 永遠可開團</span></div>
+    <div class="metric"><strong data-counter="2">0</strong><span>敘事與規則雙引擎</span></div>
+    <div class="metric"><strong data-counter="4">0</strong><span>首波客群轉化任務</span></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split-layout">
+    <div class="section-heading reveal">
+      <div class="eyebrow">Brand System</div>
+      <h2 class="section-title">用「第 N 維度」建立自己的品牌辨識，而不是套用常見深色科技風。</h2>
+      <p class="section-desc">新版把官網重新定位成一座可被探索的異界控制台：裂隙、星圖、骰子、卷軸與桌面格線成為專屬語彙，減少一般 SaaS landing page 的相似感。</p>
+    </div>
+    <div class="custom-tokens reveal">
+      <div class="token-card token-a"><span>Dimensional Rift</span><strong>裂隙紫</strong></div>
+      <div class="token-card token-b"><span>Oracle Cyan</span><strong>預言青</strong></div>
+      <div class="token-card token-c"><span>Dice Gold</span><strong>骰面金</strong></div>
+      <div class="token-card token-d"><span>Island Jade</span><strong>島嶼玉</strong></div>
+    </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="eyebrow reveal">Value Proposition</div>
-    <h2 class="section-title reveal">不是聊天機器人，而是可以玩的互動影集。</h2>
-    <p class="section-desc reveal">這版官網以「高自由度 × 低門檻」作為視覺與內容主軸，將產品痛點、差異化、商業模式與團隊強項拆成多個頁面，便於未來正式部署與持續擴充。</p>
-    <div class="grid-3" style="margin-top:28px;">
-      <article class="card feature-card reveal">
-        <div class="icon">🎲</div>
-        <h3>30 秒無痛開局</h3>
-        <p>視覺化劇本選擇與創角流程，取代厚重規則書，讓新玩家能快速進入故事，不需要先讀完整套系統。</p>
-        <span class="tag">Instant Immersion</span>
-      </article>
-      <article class="card feature-card reveal">
-        <div class="icon">🧠</div>
-        <h3>雙核引擎裁判機制</h3>
-        <p>敘事層由大型語言模型負責氛圍與互動；邏輯層以程式碼處理擲骰、血量與數值，降低 AI 幻覺問題。</p>
-        <span class="tag">Neuro-symbolic</span>
-      </article>
-      <article class="card feature-card reveal">
-        <div class="icon">🌏</div>
-        <h3>繁中在地化內容</h3>
-        <p>以原生繁中辭典庫與台灣文化題材劇本切入市場，讓「愈在地、愈國際」成為品牌差異化敘事。</p>
-        <span class="tag">Glocal Content</span>
-      </article>
+    <div class="eyebrow reveal">Adventure Loop</div>
+    <h2 class="section-title reveal">玩家看到的是故事，系統背後是一條可驗證的冒險迴圈。</h2>
+    <div class="loop-grid">
+      <article class="loop-card reveal"><span>01</span><h3>選擇劇本</h3><p>從台灣民俗、都市奇幻、經典地城與自訂開場切入，先給玩家一個明確入口。</p></article>
+      <article class="loop-card reveal"><span>02</span><h3>創建角色</h3><p>把種族、職業、屬性與背景拆成視覺化步驟，避免新手被規則書阻擋。</p></article>
+      <article class="loop-card reveal"><span>03</span><h3>行動判定</h3><p>玩家用自然語言提出任何行動，系統抽取意圖、擲骰、更新狀態並保存。</p></article>
+      <article class="loop-card reveal"><span>04</span><h3>世界回應</h3><p>AI DM 依照已落盤的規則結果生成敘事，讓自由度與公平性同時存在。</p></article>
     </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container showcase">
-    <div class="image-card reveal">
-      <img src="assets/images/product_desktop.jpg" alt="MVP 電腦版主介面">
-      <div class="caption">MVP 電腦版介面示意：角色資訊、持有物品、劇情推進與功能欄位集中在同一桌面視圖。</div>
-    </div>
+    <figure class="image-card reveal">
+      <img src="assets/images/scenario-shelf.svg" alt="Planar Table 劇本宇宙展示">
+      <figcaption class="caption">劇本不是單純清單，而是一座「異界書架」：每個模組都有地域、風格、危險度與推薦玩家輪廓。</figcaption>
+    </figure>
     <div class="image-stack">
-      <div class="card reveal">
-        <h3>三個現在就能成為官網重點的訊息</h3>
+      <article class="panel reveal">
+        <h3>新版首頁刻意做出的差異化</h3>
         <ul>
-          <li>解決約不到人、規則太厚、碎片時間無法遊玩的核心痛點。</li>
-          <li>產品定位清楚：AI 輔助跑團工具，長期演進為互動內容平台。</li>
-          <li>官網可直接作為募資、參賽、提案或招生/招募頁面的基礎版本。</li>
+          <li>不再依賴通用遊戲海報或常見玻璃卡片，改用自製 SVG 與桌面控制台構圖。</li>
+          <li>新增品牌色票、冒險迴圈、劇本宇宙，讓網站看起來像產品世界觀的一部分。</li>
+          <li>主 CTA 從「看產品特色」調整為「看冒險桌介面」，更貼近遊戲網站語氣。</li>
         </ul>
-      </div>
-      <div class="image-card reveal">
-        <img src="assets/images/product_onboarding.jpg" alt="MVP 初始創角與劇本選擇畫面">
-        <div class="caption">初始介面以角色創建 UI 與劇本選擇器承接新手流量，凸顯零門檻與高重玩性。</div>
-      </div>
+      </article>
+      <article class="quote-card reveal">
+        <p>「AI 不是取代 DM，而是讓每個沒約到團的人，今晚也能把骰子擲出去。」</p>
+        <span>Planar Table positioning line</span>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div class="eyebrow reveal">Site Map</div>
-    <h2 class="section-title reveal">本次提供的網站架構</h2>
-    <div class="grid-4" style="margin-top:28px;">
-      <article class="card reveal"><h3>首頁</h3><p>品牌主張、主視覺、核心賣點與快速入口。</p></article>
-      <article class="card reveal"><h3>產品特色</h3><p>雙核引擎、桌遊化介面、跨裝置體驗與 MVP 展示。</p></article>
-      <article class="card reveal"><h3>市場與商模</h3><p>痛點、客群、競品、定價與營收飛輪整理。</p></article>
-      <article class="card reveal"><h3>團隊 / 藍圖</h3><p>成員背景、角色分工、Roadmap 與行銷節奏。</p></article>
+<section class="section final-cta">
+  <div class="container callout reveal">
+    <div>
+      <div class="eyebrow">Ready for Pitch / Demo</div>
+      <h2>把它當作提案官網，也能繼續擴充成真正產品入口。</h2>
+      <p>這版已把首頁、產品、市場、團隊與藍圖串成一致視覺系統，未來可再接候補名單、登入、實機 Demo 或創作者市集。</p>
+    </div>
+    <div class="callout-actions">
+      <a class="btn btn-primary" href="product.html">深入產品</a>
+      <a class="btn btn-ghost" href="roadmap.html">看發展藍圖</a>
     </div>
   </div>
 </section>
-
-
-  </main>
+</main>
   
 <footer class="footer">
-  <div class="container footer-inner">
+  <div class="container footer-grid">
     <div>
-      <strong>PLANAR TABLE</strong>
-      <div>把 AI 敘事、規則運算與桌遊介面整合為可隨時開局的數位冒險體驗。</div>
+      <div class="footer-brand">PLANAR TABLE</div>
+      <p>把 AI 敘事、規則裁判與桌遊儀式感收束成一張可隨身展開的冒險桌。</p>
     </div>
-    <div class="footer-links">
+    <div class="footer-links" aria-label="頁尾導覽">
       <a href="product.html">產品特色</a>
+      <a href="market.html">市場商模</a>
       <a href="team.html">團隊</a>
+      <a href="roadmap.html">藍圖</a>
+    </div>
+    <div class="footer-note">
+      <span>Custom visual system v2</span>
+      <span>無外部圖庫，SVG 與版型皆可再延伸</span>
     </div>
   </div>
 </footer>

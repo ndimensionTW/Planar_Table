@@ -3,137 +3,111 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Planar Table｜團隊介紹</title>
-  <meta name="description" content="Planar Table 官方網站提案版，介紹產品定位、功能特色、商業模式、團隊與發展藍圖。">
+  <title>Planar Table｜第 N 維度團隊</title>
+  <meta name="description" content="第 N 維度團隊介紹：產品、營運、成長、技術與敘事指導。">
+  <meta name="theme-color" content="#090B18">
+  <link rel="icon" href="assets/images/planar-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/pages.css">
 </head>
 <body data-page="team">
+  <div class="site-aurora" aria-hidden="true"></div>
   
 <header class="site-header">
-  <div class="container inner">
+  <div class="container header-inner">
     <a class="brand" href="index.html" aria-label="Planar Table 首頁">
-      <span class="brand-mark"><svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-<path d="M32 7L51 20V44L32 57L13 44V20L32 7Z" stroke="#F0C66B" stroke-width="2.8"/>
-<path d="M32 7V57M13 20L51 44M51 20L13 44" stroke="#A9D6FF" stroke-width="2.2" opacity=".9"/>
-<circle cx="32" cy="32" r="5.5" fill="#4AA7FF" opacity=".9"/>
+      <span class="brand-mark"><svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <linearGradient id="m" x1="10" y1="6" x2="66" y2="68" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B9F7FF"/><stop offset=".48" stop-color="#E7C064"/><stop offset="1" stop-color="#B879FF"/>
+    </linearGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <path d="M36 5.5 62.5 20v32L36 66.5 9.5 52V20L36 5.5Z" stroke="url(#m)" stroke-width="2.5"/>
+  <path d="M36 5.5v61M9.5 20 62.5 52M62.5 20 9.5 52" stroke="#8DE7D2" stroke-width="1.4" opacity=".62"/>
+  <path d="M22 36c5.8-7.4 20.2-7.4 28 0-6.6 8.7-21.7 8.7-28 0Z" fill="#091226" stroke="#E7C064" stroke-width="1.6" filter="url(#g)"/>
+  <circle cx="36" cy="36" r="5.8" fill="#B9F7FF" opacity=".9"/>
+  <path d="M36 24 41.6 31.8 50 32.8 44.2 39.2 45.8 48 36 43.6 26.2 48 27.8 39.2 22 32.8 30.4 31.8 36 24Z" stroke="#B879FF" stroke-width="1.2" opacity=".72"/>
 </svg></span>
       <span class="brand-copy">
         <strong>PLANAR TABLE</strong>
-        <span>口袋裡的 AI 冒險桌遊</span>
+        <span>第 N 維度的 AI 冒險桌</span>
       </span>
     </a>
-    <nav class="nav" data-nav>
+    <nav class="nav" data-nav aria-label="主要導覽">
       <a href="index.html" data-page-link="index">首頁</a>
       <a href="product.html" data-page-link="product">產品特色</a>
+      <a href="market.html" data-page-link="market">市場商模</a>
       <a href="team.html" data-page-link="team">團隊介紹</a>
+      <a href="roadmap.html" data-page-link="roadmap">發展藍圖</a>
     </nav>
     <div class="header-actions">
-      <button class="menu-toggle" data-menu-toggle aria-label="切換選單">☰</button>
+      <a class="btn btn-compact btn-primary" href="product.html#demo">體驗設計</a>
+      <button class="menu-toggle" data-menu-toggle aria-label="切換選單"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
 
   <main>
-    
-<section class="hero hero-compact">
-  <div class="container reveal">
-    <div class="eyebrow">Team</div>
-    <h1 class="section-title">第 N 維度團隊</h1>
-    <p class="page-lead">這一頁把團隊資訊重組成更適合官網閱讀的卡片式介紹，讓訪客快速理解每位成員的角色定位與整體互補性。</p>
+<section class="page-hero">
+  <div class="container page-hero-grid">
+    <div class="reveal">
+      <div class="eyebrow">Team / Dimension N</div>
+      <h1 class="section-title">第 N 維度：把產品、技術、成長與敘事轉譯放在同一張桌上。</h1>
+      <p class="page-lead">新版團隊頁把成員從履歷式清單改成「冒險隊配置」：每個人都有角色定位、核心能力與對產品負責的任務。</p>
+    </div>
+    <figure class="image-card reveal"><img src="assets/images/team-overview.svg" alt="第 N 維度團隊角色星圖"><figcaption class="caption">CEO、COO、CGO、CTO 與指導老師形成完整產品小隊：從提案到 MVP 都能直接推進。</figcaption></figure>
   </div>
 </section>
 
 <section class="section">
-  <div class="container team-hero">
-    <figure class="image-card reveal">
-      <img src="assets/images/team_overview.jpg" alt="第 N 維度團隊介紹圖">
-      <figcaption class="caption">團隊角色圖：CEO、COO、CGO、CTO 與指導老師，兼具產品、技術、成長與敘事轉譯能力。</figcaption>
-    </figure>
-    <div class="team-cards">
-      <article class="team-card reveal">
-        <div class="role">CEO</div>
-        <h3>陳彥友</h3>
-        <p>產品總指揮與跨域溝通者，負責品牌方向、整體提案與跨國/跨域協作整合。</p>
-        <ul>
-          <li>國立中山大學資訊管理學系</li>
-          <li>ASEP 亞洲學生交流計畫第一名</li>
-          <li>跨日協作設計實體桌遊</li>
-        </ul>
-        <span class="tag">產品策略 / 對外溝通</span>
-      </article>
-      <article class="team-card reveal">
-        <div class="role">COO</div>
-        <h3>羅榆翔</h3>
-        <p>市場調研與使用者體驗方向，負責營運節奏、需求洞察與早期驗證流程。</p>
-        <ul>
-          <li>國立中山大學資訊管理學系</li>
-          <li>InnoServe 資應組第二名</li>
-          <li>參加德國佛萊堡大學交換計畫</li>
-        </ul>
-        <span class="tag">營運 / UX</span>
-      </article>
-      <article class="team-card reveal">
-        <div class="role">CGO</div>
-        <h3>郭仕彥</h3>
-        <p>負責 UI/UX 設計與成長操作，將產品表現、流量獲取與用戶體驗串在一起。</p>
-        <ul>
-          <li>國立中山大學資訊管理學系</li>
-          <li>FreeCodeCamp Front End Certification</li>
-          <li>具備市場資料與前端設計能力</li>
-        </ul>
-        <span class="tag">Growth / UIUX</span>
-      </article>
-      <article class="team-card reveal">
-        <div class="role">CTO</div>
-        <h3>陳育霖</h3>
-        <p>技術實作主力，處理程式架構、提示詞工程、系統邏輯與資安控管。</p>
-        <ul>
-          <li>國立中山大學資訊工程學系</li>
-          <li>中研院資訊所實習</li>
-          <li>2024/2025 ICPC 銅牌、程式能力檢定 7/7</li>
-        </ul>
-        <span class="tag">Engineering / Security</span>
-      </article>
-    </div>
+  <div class="container party-grid">
+    <article class="team-card reveal"><div class="role">CEO / Party Lead</div><h3>陳彥友</h3><p>產品總指揮與跨域溝通者，負責品牌方向、整體提案與跨國/跨域協作整合。</p><ul><li>國立中山大學資訊管理學系</li><li>ASEP 亞洲學生交流計畫第一名</li><li>跨日協作設計實體桌遊</li></ul><span class="tag">產品策略 / 對外溝通</span></article>
+    <article class="team-card reveal"><div class="role">COO / Quest Master</div><h3>羅榆翔</h3><p>市場調研與使用者體驗方向，負責營運節奏、需求洞察與早期驗證流程。</p><ul><li>國立中山大學資訊管理學系</li><li>InnoServe 資應組第二名</li><li>德國佛萊堡大學交換計畫</li></ul><span class="tag">營運 / UX</span></article>
+    <article class="team-card reveal"><div class="role">CGO / Interface Alchemist</div><h3>郭仕彥</h3><p>負責 UI/UX 設計與成長操作，將產品表現、流量獲取與使用者體驗串在一起。</p><ul><li>國立中山大學資訊管理學系</li><li>FreeCodeCamp Front End Certification</li><li>具備市場資料與前端設計能力</li></ul><span class="tag">Growth / UIUX</span></article>
+    <article class="team-card reveal"><div class="role">CTO / Rule Smith</div><h3>陳育霖</h3><p>技術實作主力，處理程式架構、提示詞工程、系統邏輯與資安控管。</p><ul><li>國立中山大學資訊工程學系</li><li>中研院資訊所實習</li><li>2024/2025 ICPC 銅牌、程式能力檢定 7/7</li></ul><span class="tag">Engineering / Security</span></article>
   </div>
 </section>
 
 <section class="section">
   <div class="container two-up">
     <article class="panel reveal">
-      <h3>指導老師</h3>
-      <p>黃郁晴老師長期投入在地文化轉譯與數位敘事教學，提供敘事轉譯、內容包裝與文化脈絡上的指導。</p>
-      <ul>
-        <li>國立中山大學西灣學院助理教授</li>
-        <li>指導學生獲多項教育、科普與永續相關競賽成果</li>
-        <li>對「台灣文化如何被轉譯成數位內容」具有實務與教學經驗</li>
-      </ul>
+      <div class="eyebrow">Advisor</div>
+      <h3>黃郁晴老師</h3>
+      <p>長期投入在地文化轉譯與數位敘事教學，提供敘事轉譯、內容包裝與文化脈絡上的指導。</p>
+      <ul><li>國立中山大學西灣學院助理教授</li><li>指導學生獲多項教育、科普與永續相關競賽成果</li><li>協助台灣文化轉譯成數位內容與遊戲敘事</li></ul>
     </article>
-    <article class="panel reveal">
-      <h3>團隊優勢</h3>
-      <ul>
-        <li>長期合作默契：從課程到專題累積多次協作經驗。</li>
-        <li>跨域組成完整：技術、產品、設計、成長與敘事指導都在核心陣列內。</li>
-        <li>技術驅動基因：不只會寫提案，也能直接做出 MVP 與實測原型。</li>
-        <li>品牌敘事一致：從功能、內容到市場切入都能串成同一個故事。</li>
-      </ul>
+    <article class="panel panel-accent reveal">
+      <div class="eyebrow">Team Edge</div>
+      <h3>這不是只有簡報的團隊，而是能把 MVP 做出來的隊伍。</h3>
+      <ul><li>長期合作默契：從課程、專題到比賽累積協作經驗。</li><li>跨域組成完整：技術、產品、設計、成長與敘事指導皆在核心陣列內。</li><li>技術驅動基因：能直接落地雙核引擎、UI、資料流與資安。</li><li>品牌敘事一致：從功能、內容到市場切入都能串成同一個故事。</li></ul>
     </article>
   </div>
 </section>
 
-
-  </main>
+<section class="section">
+  <div class="container team-note reveal">
+    <span>Recruiting narrative</span>
+    <p>我們尋找的不只是玩家，而是願意一起把「中文 AI 跑團」推向內容平台的人：劇本作者、測試玩家、TRPG 社群主與前端/後端協作者。</p>
+  </div>
+</section>
+</main>
   
 <footer class="footer">
-  <div class="container footer-inner">
+  <div class="container footer-grid">
     <div>
-      <strong>PLANAR TABLE</strong>
-      <div>把 AI 敘事、規則運算與桌遊介面整合為可隨時開局的數位冒險體驗。</div>
+      <div class="footer-brand">PLANAR TABLE</div>
+      <p>把 AI 敘事、規則裁判與桌遊儀式感收束成一張可隨身展開的冒險桌。</p>
     </div>
-    <div class="footer-links">
+    <div class="footer-links" aria-label="頁尾導覽">
       <a href="product.html">產品特色</a>
+      <a href="market.html">市場商模</a>
       <a href="team.html">團隊</a>
+      <a href="roadmap.html">藍圖</a>
+    </div>
+    <div class="footer-note">
+      <span>Custom visual system v2</span>
+      <span>無外部圖庫，SVG 與版型皆可再延伸</span>
     </div>
   </div>
 </footer>

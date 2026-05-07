@@ -3,195 +3,138 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Planar Table｜市場與商模</title>
-  <meta name="description" content="Planar Table 官方網站提案版，介紹產品定位、功能特色、商業模式、團隊與發展藍圖。">
+  <title>Planar Table｜市場與商業模式</title>
+  <meta name="description" content="說明 Planar Table 的市場痛點、目標客群、訂閱與 UGC 分潤商業模式。">
+  <meta name="theme-color" content="#090B18">
+  <link rel="icon" href="assets/images/planar-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/pages.css">
 </head>
 <body data-page="market">
+  <div class="site-aurora" aria-hidden="true"></div>
   
 <header class="site-header">
-  <div class="container inner">
+  <div class="container header-inner">
     <a class="brand" href="index.html" aria-label="Planar Table 首頁">
-      <span class="brand-mark"><svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-<path d="M32 7L51 20V44L32 57L13 44V20L32 7Z" stroke="#F0C66B" stroke-width="2.8"/>
-<path d="M32 7V57M13 20L51 44M51 20L13 44" stroke="#A9D6FF" stroke-width="2.2" opacity=".9"/>
-<circle cx="32" cy="32" r="5.5" fill="#4AA7FF" opacity=".9"/>
+      <span class="brand-mark"><svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <linearGradient id="m" x1="10" y1="6" x2="66" y2="68" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B9F7FF"/><stop offset=".48" stop-color="#E7C064"/><stop offset="1" stop-color="#B879FF"/>
+    </linearGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <path d="M36 5.5 62.5 20v32L36 66.5 9.5 52V20L36 5.5Z" stroke="url(#m)" stroke-width="2.5"/>
+  <path d="M36 5.5v61M9.5 20 62.5 52M62.5 20 9.5 52" stroke="#8DE7D2" stroke-width="1.4" opacity=".62"/>
+  <path d="M22 36c5.8-7.4 20.2-7.4 28 0-6.6 8.7-21.7 8.7-28 0Z" fill="#091226" stroke="#E7C064" stroke-width="1.6" filter="url(#g)"/>
+  <circle cx="36" cy="36" r="5.8" fill="#B9F7FF" opacity=".9"/>
+  <path d="M36 24 41.6 31.8 50 32.8 44.2 39.2 45.8 48 36 43.6 26.2 48 27.8 39.2 22 32.8 30.4 31.8 36 24Z" stroke="#B879FF" stroke-width="1.2" opacity=".72"/>
 </svg></span>
       <span class="brand-copy">
         <strong>PLANAR TABLE</strong>
-        <span>口袋裡的 AI 冒險桌遊</span>
+        <span>第 N 維度的 AI 冒險桌</span>
       </span>
     </a>
-    <nav class="nav" data-nav>
+    <nav class="nav" data-nav aria-label="主要導覽">
       <a href="index.html" data-page-link="index">首頁</a>
       <a href="product.html" data-page-link="product">產品特色</a>
+      <a href="market.html" data-page-link="market">市場商模</a>
       <a href="team.html" data-page-link="team">團隊介紹</a>
+      <a href="roadmap.html" data-page-link="roadmap">發展藍圖</a>
     </nav>
     <div class="header-actions">
-      <button class="menu-toggle" data-menu-toggle aria-label="切換選單">☰</button>
+      <a class="btn btn-compact btn-primary" href="product.html#demo">體驗設計</a>
+      <button class="menu-toggle" data-menu-toggle aria-label="切換選單"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
 
   <main>
-    
-<section class="hero hero-compact">
-  <div class="container reveal">
-    <div class="eyebrow">Market & Business</div>
-    <h1 class="section-title">市場痛點、客群輪廓與獲利模式</h1>
-    <p class="page-lead">這頁把提案中最適合對外溝通的內容濃縮成官網語言：為什麼市場做不大、Planar Table 如何切入，以及第一階段如何驗證付費與成長。</p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="showcase">
-      <figure class="image-card reveal">
-        <img src="assets/images/audience.jpg" alt="目標客群視覺整理">
-        <figcaption class="caption">從核心蛋黃區到生態外殼區：由獨狼玩家、新手、互動文學愛好者到內容創作者逐步擴張。</figcaption>
-      </figure>
-      <article class="panel reveal">
-        <h3>市場痛點 → 解決方案</h3>
-        <div class="compare-list" style="margin-top:16px;">
-          <div class="compare-row"><div><strong>流量轉換斷層</strong><span>D&D 規則複雜</span></div><div><strong>30 秒無痛開局</strong><span>視覺化引導承接影視與遊戲流量。</span></div></div>
-          <div class="compare-row"><div><strong>供給端瓶頸</strong><span>真人 DM 培養成本高</span></div><div><strong>AI 虛擬 DM</strong><span>24 小時在線，降低供給上限。</span></div></div>
-          <div class="compare-row"><div><strong>碎片時間斷裂</strong><span>上班族難以約長時段</span></div><div><strong>單人冒險系統</strong><span>把零碎時間變成可玩的劇情進度。</span></div></div>
-          <div class="compare-row"><div><strong>內容在地化不足</strong><span>多數劇本偏西方奇幻</span></div><div><strong>繁中在地內容</strong><span>以台灣文化題材建立差異化與文化輸出。</span></div></div>
-        </div>
-      </article>
+<section class="page-hero">
+  <div class="container page-hero-grid">
+    <div class="reveal">
+      <div class="eyebrow">Market / Business</div>
+      <h1 class="section-title">從「想玩但玩不到」切入，把小眾 TRPG 轉成可訂閱的單人娛樂。</h1>
+      <p class="page-lead">新版市場頁不只列痛點，而是把流量、付費、內容供給與長尾加值整理成一個可被投資人理解的營收飛輪。</p>
     </div>
+    <figure class="image-card reveal"><img src="assets/images/audience-map.svg" alt="Planar Table 目標客群地圖"><figcaption class="caption">核心從獨狼玩家與新手開始，再擴張到互動文學與創作者生態。</figcaption></figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container pain-grid">
+    <article class="pain-card reveal"><span>01</span><h3>流量斷層</h3><p>D&D 與奇幻 IP 吸引很多人，但規則書與創角流程讓新手停在門外。</p><strong>→ 30 秒創角入桌</strong></article>
+    <article class="pain-card reveal"><span>02</span><h3>供給瓶頸</h3><p>真人 DM 培養成本高，時間難約，導致需求被壓抑。</p><strong>→ AI DM 全天候主持</strong></article>
+    <article class="pain-card reveal"><span>03</span><h3>時間破碎</h3><p>上班族與學生難以固定 3 至 5 小時跑團。</p><strong>→ 單人可中斷冒險</strong></article>
+    <article class="pain-card reveal"><span>04</span><h3>內容同質</h3><p>大量西方奇幻題材使繁中玩家缺少文化熟悉感。</p><strong>→ 台灣題材與在地語氣</strong></article>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="eyebrow reveal">Audience Segments</div>
-    <h2 class="section-title reveal">四類目標客群，各自對應不同轉化任務</h2>
-    <div class="tabs reveal">
+    <div class="eyebrow reveal">Audience Console</div>
+    <h2 class="section-title reveal">四類客群不是同一套說法，而是四個轉化任務。</h2>
+    <div class="tabs reveal" role="tablist" aria-label="目標客群">
       <button class="tab-btn active" data-tab-target="wolf">獨狼玩家</button>
       <button class="tab-btn" data-tab-target="newbie">TRPG 新手</button>
       <button class="tab-btn" data-tab-target="fiction">互動文學迷</button>
       <button class="tab-btn" data-tab-target="creator">內容創作者</button>
     </div>
-
-    <div class="tab-panel active" data-tab-panel="wolf">
-      <article class="panel reveal">
-        <h3>核心主力：有錢沒時間，但仍想玩高品質冒險</h3>
-        <p>這群玩家重視的是「可中斷、可持續、品質穩定」的娛樂。他們不是沒有興趣，而是沒有固定團與長時間。</p>
-        <ul>
-          <li>特徵：25-40 歲、具消費能力、熟悉 D&D 或《柏德之門 3》。</li>
-          <li>需求：單人可玩、隨時開局、體驗品質高。</li>
-          <li>價值：高 ARPU，最適合作為首波付費驗證樣本。</li>
-        </ul>
-      </article>
-    </div>
-    <div class="tab-panel" data-tab-panel="newbie">
-      <article class="panel reveal">
-        <h3>流量入口：被 D&D 吸引，但被規則書勸退的新手</h3>
-        <p>對這群人來說，關鍵不是劇本深度，而是第一分鐘能不能進入狀況。官網與產品體驗都要先降低理解門檻。</p>
-        <ul>
-          <li>特徵：受《怪奇物語》或奇幻 IP 影響的年輕族群。</li>
-          <li>需求：創角引導、視覺化選項、快速上手。</li>
-          <li>價值：決定能否把大眾流量轉成真實使用者。</li>
-        </ul>
-      </article>
-    </div>
-    <div class="tab-panel" data-tab-panel="fiction">
-      <article class="panel reveal">
-        <h3>破圈關鍵：想改寫故事，而不是只看故事的人</h3>
-        <p>互動文學愛好者不一定是桌遊玩家，但對「故事分支」與「選擇後果」非常有感，最適合突破小眾圈層。</p>
-        <ul>
-          <li>特徵：喜歡視覺小說、文字冒險、互動敘事。</li>
-          <li>需求：高自由度分支、持續驚喜、重玩價值。</li>
-          <li>價值：可放大市場母體，成為第二階段擴張來源。</li>
-        </ul>
-      </article>
-    </div>
-    <div class="tab-panel" data-tab-panel="creator">
-      <article class="panel reveal">
-        <h3>內容飛輪：把想寫故事的人變成平台供給者</h3>
-        <p>當創作者可以在平台上販售劇本並分潤，Planar Table 就不只是工具，而是內容生態系。</p>
-        <ul>
-          <li>特徵：業餘作家、劇本創作者、DM、世界觀設計者。</li>
-          <li>需求：上架機制、創作工具、合理分潤。</li>
-          <li>價值：內容供給持續增長，平台更有黏著度與護城河。</li>
-        </ul>
-      </article>
+    <div class="tab-deck reveal">
+      <article class="tab-panel active" data-tab-panel="wolf"><h3>首波付費驗證：有興趣、有預算，但缺固定團。</h3><p>他們重視穩定品質、可中斷、可長期養成。官網要讓他們相信這不是玩具，而是能持續消費的冒險工具。</p><ul><li>CTA：立即開局 / 查看 Pro 能力</li><li>關鍵訊息：不用等朋友、劇情可持續</li><li>價值：高 ARPU 與早期口碑</li></ul></article>
+      <article class="tab-panel" data-tab-panel="newbie"><h3>流量入口：被奇幻內容吸引，但不想先讀規則書。</h3><p>這群人需要的是第一分鐘就知道怎麼玩。新版用「創角卡片」和「30 秒入桌」降低心理負擔。</p><ul><li>CTA：從推薦角色開始</li><li>關鍵訊息：不用懂規則也能玩</li><li>價值：擴大市場母體</li></ul></article>
+      <article class="tab-panel" data-tab-panel="fiction"><h3>破圈受眾：比起觀看故事，更想改寫故事。</h3><p>互動文學迷可以被「選擇後果」與「自由輸入」吸引，成為從桌遊圈外進入的第二波用戶。</p><ul><li>CTA：體驗互動章節</li><li>關鍵訊息：你的選擇會改變世界</li><li>價值：跨圈層成長</li></ul></article>
+      <article class="tab-panel" data-tab-panel="creator"><h3>長期飛輪：把會寫故事的人變成供給端。</h3><p>UGC 編輯器與分潤機制成熟後，Planar Table 可以從工具變成劇本平台，形成內容護城河。</p><ul><li>CTA：加入創作者候補</li><li>關鍵訊息：你的劇本可以被遊玩與販售</li><li>價值：內容長尾與平台抽成</li></ul></article>
     </div>
   </div>
 </section>
 
 <section class="section">
-  <div class="container">
-    <div class="eyebrow reveal">Pricing</div>
-    <h2 class="section-title reveal">Freemium + 訂閱 + 算力加值 + UGC 分潤</h2>
-    <div class="pricing-grid" style="margin-top:28px;">
-      <article class="tier reveal">
-        <div class="tag">獲客入口</div>
-        <h3>Free 體驗版</h3>
-        <div class="price">NT$0</div>
-        <p>提供每日有限對話與單一官方劇本，讓使用者先感受到產品價值。</p>
-        <ul>
-          <li>每日免費 60 次對話</li>
-          <li>體驗官方劇本</li>
-          <li>適合初次接觸者</li>
-        </ul>
-      </article>
-      <article class="tier popular reveal">
-        <div class="tag">核心 ARR</div>
-        <h3>Pro 訂閱版</h3>
-        <div class="price">NT$300<span style="font-size:1rem;"> / 月</span></div>
-        <p>解鎖無限 AI 對話、完整官方內容與私人劇本庫，是第一階段穩定經常性收入來源。</p>
-        <ul>
-          <li>無限次 AI 對話</li>
-          <li>完整官方劇本</li>
-          <li>建立私人劇本庫</li>
-        </ul>
-      </article>
-      <article class="tier reveal">
-        <div class="tag">長尾營收</div>
-        <h3>魔力水晶</h3>
-        <div class="price">NT$30<span style="font-size:1rem;"> 起 / 筆</span></div>
-        <p>針對高耗能生成與功能型體驗加值，例如角色繪圖、復活角色或命運修正。</p>
-        <ul>
-          <li>角色立繪生成</li>
-          <li>復活角色 / 修改命運</li>
-          <li>拉高 ARPU</li>
-        </ul>
-      </article>
+  <div class="container pricing-layout">
+    <div class="pricing-copy reveal">
+      <div class="eyebrow">Revenue Flywheel</div>
+      <h2 class="section-title">Free 讓人入桌，Pro 留住冒險，水晶與 UGC 放大長尾。</h2>
+      <p class="section-desc">新版用「營收飛輪」視覺取代單純價格表，讓評審或合作方更容易看懂成長邏輯。</p>
+      <img src="assets/images/pricing-flywheel.svg" alt="Planar Table 營收飛輪">
+    </div>
+    <div class="pricing-grid reveal">
+      <article class="tier"><div class="tag">獲客入口</div><h3>Free 體驗版</h3><div class="price">NT$0</div><p>每日有限對話與官方短劇本，讓玩家先完成一次成功冒險。</p></article>
+      <article class="tier popular"><div class="tag">核心 ARR</div><h3>Pro 訂閱版</h3><div class="price">NT$300<span>/月</span></div><p>解鎖完整劇本、無限對話、私人劇本庫與進階角色保存。</p></article>
+      <article class="tier"><div class="tag">長尾加值</div><h3>魔力水晶</h3><div class="price">NT$30<span>起</span></div><p>角色立繪、命運修正、復活角色與高耗能生成作為加值項目。</p></article>
     </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container two-up">
-    <figure class="image-card reveal">
-      <img src="assets/images/competition.jpg" alt="競品比較圖">
-      <figcaption class="caption">對外溝通上，最好的比較方式是強調：懂中文、懂在地文化，而且不只是小說家，而是能裁判規則的 AI。</figcaption>
-    </figure>
+    <figure class="image-card reveal"><img src="assets/images/competition.svg" alt="Planar Table 競品差異視覺"><figcaption class="caption">對通用 AI：不是只會寫故事；對海外競品：不只是翻譯；對實體跑團：補足時間與供給缺口。</figcaption></figure>
     <article class="panel reveal">
-      <h3>對外主敘事：為什麼不是 ChatGPT？</h3>
-      <div class="compare-list" style="margin-top:16px;">
-        <div class="compare-row"><div><strong>對通用 AI</strong><span>不是只會寫故事</span></div><div><strong>是裁判，不只是小說家</strong><span>規則運算與文本生成分離，降低數值幻覺。</span></div></div>
-        <div class="compare-row"><div><strong>對國外競品</strong><span>不只翻成中文</span></div><div><strong>懂中文，也懂在地文化</strong><span>繁中辭典庫與台灣題材建立文化壁壘。</span></div></div>
-        <div class="compare-row"><div><strong>對實體跑團</strong><span>不取代真人溫度</span></div><div><strong>解決湊不齊人的剛性痛點</strong><span>隨時隨地都能推進劇情。</span></div></div>
-      </div>
+      <h3>一句話講差異化</h3>
+      <p class="big-line">懂中文、懂規則、也懂你真的想「玩」而不是只看故事。</p>
+      <ul>
+        <li><strong>對 ChatGPT：</strong>規則與資料落盤，不讓 AI 任意改血量。</li>
+        <li><strong>對國外競品：</strong>繁中語境與台灣題材是從核心設計開始，而非後期翻譯。</li>
+        <li><strong>對真人跑團：</strong>不取代真人溫度，而是處理永遠約不齊的剛性痛點。</li>
+      </ul>
     </article>
   </div>
 </section>
-
-  </main>
+</main>
   
 <footer class="footer">
-  <div class="container footer-inner">
+  <div class="container footer-grid">
     <div>
-      <strong>PLANAR TABLE</strong>
-      <div>把 AI 敘事、規則運算與桌遊介面整合為可隨時開局的數位冒險體驗。</div>
+      <div class="footer-brand">PLANAR TABLE</div>
+      <p>把 AI 敘事、規則裁判與桌遊儀式感收束成一張可隨身展開的冒險桌。</p>
     </div>
-    <div class="footer-links">
+    <div class="footer-links" aria-label="頁尾導覽">
       <a href="product.html">產品特色</a>
+      <a href="market.html">市場商模</a>
       <a href="team.html">團隊</a>
+      <a href="roadmap.html">藍圖</a>
+    </div>
+    <div class="footer-note">
+      <span>Custom visual system v2</span>
+      <span>無外部圖庫，SVG 與版型皆可再延伸</span>
     </div>
   </div>
 </footer>
