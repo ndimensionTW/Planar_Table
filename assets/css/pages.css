@@ -453,3 +453,580 @@ h1, h2, h3, .section-title, .big-line, .hero-copy h1 {
     border-radius: 16px;
   }
 }
+
+/* v6: fix headline wrapping, desktop badge layout, and team-card readability */
+.hero-copy h1.hero-title {
+  font-size: clamp(2.65rem, 4.7vw, 4.55rem);
+  line-height: 1.06;
+  letter-spacing: -0.055em;
+  max-width: 11.5em;
+  word-break: keep-all;
+  overflow-wrap: normal;
+  text-wrap: balance;
+}
+.hero-title .headline-line {
+  display: block;
+}
+.hero-grid-wide {
+  grid-template-columns: minmax(0, 1.08fr) minmax(430px, .92fr);
+  gap: clamp(28px, 4vw, 54px);
+}
+.feature-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.feature-badges .badge {
+  white-space: nowrap;
+  min-width: max-content;
+  line-height: 1.2;
+}
+@media (min-width: 1024px) {
+  .feature-badges {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: start;
+    gap: 12px;
+  }
+  .feature-badges .badge {
+    width: auto;
+    min-width: 0;
+    padding-inline: 15px;
+  }
+}
+@media (min-width: 1320px) {
+  .hero-copy h1.hero-title {
+    font-size: clamp(3rem, 4.45vw, 4.75rem);
+  }
+  .hero-grid-wide {
+    grid-template-columns: minmax(0, 1.02fr) minmax(520px, .98fr);
+  }
+}
+@media (max-width: 1180px) {
+  .hero-grid-wide {
+    grid-template-columns: 1fr;
+  }
+  .hero-copy h1.hero-title {
+    max-width: 12.5em;
+  }
+}
+@media (max-width: 620px) {
+  .hero-copy h1.hero-title {
+    font-size: clamp(2.2rem, 12vw, 3.35rem);
+    line-height: 1.08;
+    max-width: 100%;
+  }
+  .feature-badges .badge {
+    min-width: 0;
+    white-space: normal;
+  }
+}
+.party-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+.team-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 28px;
+  overflow-wrap: break-word;
+}
+.team-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 12px;
+}
+.team-card p {
+  line-height: 1.75;
+}
+.team-card ul {
+  margin: 16px 0 0;
+  padding-left: 1.15rem;
+}
+.team-card li {
+  padding-left: .2rem;
+  line-height: 1.7;
+}
+.team-card .tag {
+  width: fit-content;
+  max-width: 100%;
+  margin-top: auto;
+  white-space: normal;
+  line-height: 1.35;
+}
+.role {
+  line-height: 1.35;
+  word-break: normal;
+}
+@media (max-width: 860px) {
+  .party-grid {
+    grid-template-columns: 1fr;
+  }
+  .team-card {
+    padding: 24px;
+  }
+}
+
+/* v6: typography and desktop card layout corrections */
+.hero-grid-wide {
+  gap: 32px;
+}
+@media (min-width: 1181px) {
+  .hero-grid-wide {
+    grid-template-columns: minmax(540px, 1fr) minmax(500px, .95fr);
+  }
+}
+.hero-title {
+  font-size: clamp(3rem, 4.2vw, 4rem) !important;
+  line-height: 1.04 !important;
+  letter-spacing: -.045em !important;
+  text-wrap: unset !important;
+}
+.hero-title-line {
+  display: block;
+}
+@media (min-width: 861px) {
+  .hero-title-line {
+    white-space: nowrap;
+  }
+  .hero-copy h1,
+  .section-title {
+    word-break: keep-all;
+    overflow-wrap: normal;
+  }
+}
+.feature-badges {
+  align-items: center;
+}
+@media (min-width: 861px) {
+  .feature-badges {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+  .feature-badges .badge {
+    flex: 0 1 auto;
+    width: auto;
+    min-width: 0;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    padding: 10px 13px;
+    font-size: .93rem;
+    line-height: 1.2;
+  }
+}
+@media (min-width: 1280px) {
+  .feature-badges {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: none;
+  }
+  .feature-badges .badge {
+    width: auto;
+  }
+}
+.party-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  align-items: stretch;
+}
+.team-card {
+  display: flex;
+  flex-direction: column;
+  min-height: auto;
+  gap: 0;
+}
+.team-card p {
+  margin-bottom: 0;
+}
+.team-card ul {
+  margin: 16px 0 18px;
+  padding-left: 1.1rem;
+}
+.team-card li {
+  margin: 0 0 8px;
+  overflow-wrap: break-word;
+}
+.team-card .tag {
+  margin-top: auto;
+  align-self: flex-start;
+  max-width: 100%;
+  white-space: normal;
+  line-height: 1.35;
+}
+.team-card .role {
+  line-height: 1.35;
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+@media (max-width: 1180px) and (min-width: 721px) {
+  .party-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 720px) {
+  .party-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 620px) {
+  .hero-title {
+    font-size: clamp(2.45rem, 12vw, 3.35rem) !important;
+    line-height: 1.08 !important;
+    letter-spacing: -.035em !important;
+  }
+  .hero-title-line {
+    white-space: normal;
+  }
+  .feature-badges {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .feature-badges .badge {
+    white-space: normal;
+    line-height: 1.35;
+  }
+}
+
+/* v6: fix desktop headline wrapping, badge layout, and team card readability */
+.hero-copy h1.hero-title {
+  font-size: clamp(3rem, 4.35vw, 5.05rem);
+  line-height: 1.06;
+  letter-spacing: -0.045em;
+  margin-bottom: 24px;
+  max-width: 12.5ch;
+  text-wrap: auto;
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+.hero-title .headline-line {
+  display: block;
+  white-space: nowrap;
+}
+@media (min-width: 1181px) {
+  .hero-grid-wide {
+    grid-template-columns: minmax(0, 1.02fr) minmax(390px, .98fr);
+    gap: 40px;
+  }
+}
+.feature-badges {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.feature-badges .badge {
+  min-width: 0;
+  width: auto !important;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  white-space: nowrap;
+  flex-wrap: nowrap !important;
+  line-height: 1.25;
+}
+@media (min-width: 900px) {
+  .feature-badges {
+    flex-wrap: nowrap;
+  }
+  .feature-badges .badge {
+    padding-inline: 16px;
+    font-size: .94rem;
+  }
+}
+body[data-page="team"] {
+  --maxw: 1280px;
+}
+body[data-page="team"] .party-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+body[data-page="team"] .team-card {
+  min-height: 0;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+}
+body[data-page="team"] .team-card p {
+  line-height: 1.75;
+  margin-bottom: 10px;
+}
+body[data-page="team"] .team-card ul {
+  margin: 12px 0 18px;
+  padding-left: 1.25em;
+}
+body[data-page="team"] .team-card li {
+  margin: 7px 0;
+  line-height: 1.65;
+}
+body[data-page="team"] .team-card .tag {
+  margin-top: auto;
+  align-self: flex-start;
+  max-width: 100%;
+  white-space: normal;
+  line-height: 1.35;
+}
+body[data-page="team"] .role {
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+@media (min-width: 1320px) {
+  body[data-page="team"] .party-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  body[data-page="team"] .team-card {
+    padding: 26px;
+  }
+}
+@media (max-width: 760px) {
+  .hero-copy h1.hero-title {
+    font-size: clamp(2.45rem, 11vw, 4.2rem);
+    max-width: 100%;
+  }
+  .hero-title .headline-line {
+    white-space: normal;
+  }
+  .feature-badges,
+  .feature-badges .badge {
+    width: 100% !important;
+  }
+  body[data-page="team"] .party-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* v6: typography and overflow repair pass */
+.hero-copy h1.hero-title {
+  max-width: 8.6em;
+  font-size: clamp(3rem, 4.7vw, 5rem);
+  line-height: 1.03;
+  letter-spacing: -.045em;
+  text-wrap: balance;
+}
+.hero-title-line {
+  display: block;
+}
+.hero-title-line.text-gradient {
+  width: max-content;
+  max-width: 100%;
+}
+.feature-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 10px;
+}
+.feature-badges .badge {
+  width: auto;
+  min-width: 0;
+  flex: 0 1 auto;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  padding-inline: 13px;
+  font-size: .94rem;
+}
+.feature-badges .badge span,
+.feature-badges .badge strong,
+.feature-badges .badge i {
+  white-space: nowrap;
+}
+@media (min-width: 1100px) {
+  .hero-grid-wide {
+    grid-template-columns: minmax(0, .98fr) minmax(460px, .92fr);
+    gap: 34px;
+  }
+  .hero-copy p {
+    max-width: 66ch;
+  }
+}
+@media (min-width: 1280px) {
+  .feature-badges {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .feature-badges .badge {
+    flex: 0 0 auto;
+  }
+}
+@media (max-width: 1180px) {
+  .hero-copy h1.hero-title {
+    max-width: 10em;
+    font-size: clamp(2.9rem, 7vw, 4.6rem);
+  }
+}
+@media (max-width: 620px) {
+  .hero-copy h1.hero-title {
+    max-width: 100%;
+    font-size: clamp(2.55rem, 12vw, 3.8rem);
+    line-height: 1.06;
+  }
+  .feature-badges {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .feature-badges .badge {
+    width: 100%;
+    white-space: normal;
+  }
+}
+
+/* Team card readability: avoid cramped four-column cards on normal desktop widths. */
+.party-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+}
+.team-card {
+  display: flex;
+  flex-direction: column;
+  min-height: auto;
+  overflow-wrap: anywhere;
+}
+.team-card h3 {
+  margin-bottom: 12px;
+}
+.team-card p {
+  margin-bottom: 12px;
+  text-wrap: pretty;
+}
+.team-card ul {
+  margin: 10px 0 16px;
+  padding-left: 1.15em;
+}
+.team-card li {
+  margin: .34em 0;
+  line-height: 1.62;
+}
+.team-card .tag {
+  margin-top: auto;
+  width: fit-content;
+  max-width: 100%;
+  white-space: normal;
+}
+@media (min-width: 1380px) {
+  .party-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+@media (max-width: 760px) {
+  .party-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* General readable-width safeguards */
+.hero-copy,
+.section-heading,
+.page-lead,
+.section-desc,
+.panel,
+.team-card,
+.loop-card,
+.quest-card,
+.pain-card,
+.scenario-card,
+.scene-tile figcaption {
+  min-width: 0;
+}
+.caption,
+.panel p,
+.panel li,
+.team-card p,
+.team-card li,
+.loop-card p,
+.quest-card p,
+.scenario-card p,
+.scene-tile span {
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+/* v6 final hotfix: stable desktop composition and no orphan headline words */
+.hero-copy h1.hero-title {
+  max-width: 12em !important;
+  font-size: clamp(2.75rem, 4vw, 4.35rem) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -.04em !important;
+  text-wrap: balance !important;
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+}
+.hero-title-line {
+  display: block !important;
+}
+@media (min-width: 1181px) {
+  .hero-grid-wide {
+    grid-template-columns: minmax(0, 1.12fr) minmax(420px, .88fr) !important;
+    gap: clamp(30px, 4vw, 52px) !important;
+  }
+  .hero-title-line {
+    white-space: nowrap !important;
+  }
+  .hero-copy p {
+    max-width: 68ch !important;
+  }
+}
+@media (max-width: 1180px) {
+  .hero-grid-wide {
+    grid-template-columns: 1fr !important;
+  }
+  .hero-title-line {
+    white-space: normal !important;
+  }
+}
+@media (max-width: 620px) {
+  .hero-copy h1.hero-title {
+    max-width: 100% !important;
+    font-size: clamp(2.35rem, 10.5vw, 3.45rem) !important;
+    line-height: 1.1 !important;
+  }
+}
+.feature-badges {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  align-items: center !important;
+}
+.feature-badges .badge {
+  width: auto !important;
+  min-width: 0 !important;
+  flex: 0 0 auto !important;
+  white-space: nowrap !important;
+  flex-wrap: nowrap !important;
+  padding: 10px 14px !important;
+  font-size: .92rem !important;
+}
+@media (max-width: 620px) {
+  .feature-badges {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+  .feature-badges .badge {
+    width: 100% !important;
+    white-space: normal !important;
+  }
+}
+body[data-page="team"] {
+  --maxw: 1180px;
+}
+body[data-page="team"] .party-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 24px !important;
+}
+body[data-page="team"] .team-card {
+  padding: 30px !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+}
+body[data-page="team"] .team-card p,
+body[data-page="team"] .team-card li {
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+}
+body[data-page="team"] .team-card .tag {
+  margin-top: auto !important;
+  align-self: flex-start !important;
+}
+@media (max-width: 760px) {
+  body[data-page="team"] .party-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
