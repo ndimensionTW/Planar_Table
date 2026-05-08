@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Planar Table｜產品特色與冒險桌介面</title>
-  <meta name="description" content="介紹 Planar Table 的雙核引擎、桌遊化 UI、創角流程與 MVP 核心功能。">
+  <title>Planar Table｜產品特色與 MVP 體驗</title>
+  <meta name="description" content="Planar Table 產品特色、雙核引擎、MVP 實機畫面與劇本宇宙。">
   <meta name="theme-color" content="#090B18">
   <link rel="icon" href="assets/images/planar-mark.svg" type="image/svg+xml">
+  <script>document.documentElement.classList.add('js')</script>
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/pages.css">
 </head>
 <body data-page="product">
   <div class="site-aurora" aria-hidden="true"></div>
-  
-<header class="site-header">
+  <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="index.html" aria-label="Planar Table 首頁">
       <span class="brand-mark"><svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -42,25 +42,28 @@
       <a href="roadmap.html" data-page-link="roadmap">發展藍圖</a>
     </nav>
     <div class="header-actions">
-      <a class="btn btn-compact btn-primary" href="product.html#demo">體驗設計</a>
-      <button class="menu-toggle" data-menu-toggle aria-label="切換選單"><span></span><span></span><span></span></button>
+      <a class="btn btn-compact btn-primary" href="product.html#demo">看實機畫面</a>
+      <button class="menu-toggle" data-menu-toggle aria-label="切換選單" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
-
   <main>
-<section class="page-hero">
+<section class="page-hero page-hero-product">
   <div class="container page-hero-grid">
     <div class="reveal">
-      <div class="eyebrow">Product / Interface</div>
-      <h1 class="section-title">把 AI 對話重新包裝成一張「可被操作」的冒險桌。</h1>
-      <p class="page-lead">Planar Table 的核心不是聊天，而是讓每一次輸入都能被規則、狀態、物品與劇情同步承接。新版產品頁以「介面就是遊戲桌」作為主視覺。</p>
+      <div class="eyebrow">Product / MVP</div>
+      <h1 class="section-title">產品特色與 MVP 體驗設計</h1>
+      <p class="page-lead">Planar Table 的產品核心不是單純聊天，而是以桌遊化介面承接 AI 敘事，把擲骰、狀態、物品、角色資訊與劇情推進變成可視化遊戲流程。</p>
       <div class="page-nav-links">
-        <a href="#engine">雙核引擎</a><a href="#demo">介面展示</a><a href="#mvp">MVP 功能</a><a href="#rules">規則可信度</a>
+        <a href="#engine">雙核引擎</a>
+        <a href="#demo">介面展示</a>
+        <a href="#mvp">MVP 功能</a>
+        <a href="#scenarios">劇本宇宙</a>
       </div>
     </div>
-    <figure class="product-device reveal">
-      <img src="assets/images/product-desktop.svg" alt="Planar Table 桌面版遊戲介面示意">
+    <figure class="image-card showcase-image reveal">
+      <img src="assets/images/product-showcase.webp" alt="Planar Table 三分頁遊戲介面展示">
+      <figcaption class="caption">以冒險、狀態、功能三個手機畫面，呈現 AI DM、角色狀態與系統功能如何形成完整遊戲體驗。</figcaption>
     </figure>
   </div>
 </section>
@@ -68,20 +71,21 @@
 <section class="section" id="engine">
   <div class="container">
     <div class="eyebrow reveal">Dual Engine</div>
-    <h2 class="section-title reveal">右手寫故事，左手守規則：AI DM 不再同時當小說家與計算機。</h2>
-    <div class="engine-lab">
+    <h2 class="section-title reveal">把「故事感」與「規則感」拆開處理。</h2>
+    <p class="section-desc reveal">右腦負責敘事沉浸，左腦負責理性運算，避免 AI 在血量、檢定與判定邏輯上失真。</p>
+    <div class="engine-lab clean-engine-lab">
       <article class="engine-card reveal">
-        <div class="engine-icon">N</div>
-        <h3>敘事引擎 Narrative Core</h3>
-        <p>負責場景氣味、NPC 語氣、玩家行動後果與分支敘事。它接受「規則層已確認的結果」，再轉化成具沉浸感的文字。</p>
-        <ul><li>高自由度自然語言輸入</li><li>NPC 對話與氣氛生成</li><li>繁中語氣與在地文本調校</li></ul>
+        <div class="engine-icon">DM</div>
+        <h3>敘事層 · Narrative Layer</h3>
+        <p>由 Gemini / Grok 等模型生成場景描述、NPC 對話與劇情氛圍，讓玩家感受到像被帶團一樣的沉浸式敘事。</p>
+        <ul><li>環境描述與故事分支</li><li>角色互動與氛圍營造</li><li>支援高自由度文字輸入</li></ul>
       </article>
-      <div class="engine-bridge reveal"><span>擲骰結果</span><span>狀態落盤</span><span>敘事回寫</span></div>
+      <div class="engine-bridge reveal"><span>意圖抽取</span><span>D20 判定</span><span>結果落盤</span></div>
       <article class="engine-card reveal">
-        <div class="engine-icon">R</div>
-        <h3>規則引擎 Rule Kernel</h3>
-        <p>負責 D&D 5e 角色資料、HP、物品、技能檢定與資料庫保存，降低大型語言模型在數值上自說自話的風險。</p>
-        <ul><li>骰子檢定與能力值計算</li><li>物品與金幣資料一致性</li><li>角色進度與死亡豁免保存</li></ul>
+        <div class="engine-icon">D20</div>
+        <h3>邏輯層 · Logic Layer</h3>
+        <p>以 TypeScript 後端、資料庫與工具流程處理骰子檢定、HP 扣減、裝備資料與結果落盤，讓 AI 僅負責解釋，不負責竄改結果。</p>
+        <ul><li>規則判定與數值可信度</li><li>存檔與角色進度管理</li><li>遊戲裁判的一致性</li></ul>
       </article>
     </div>
   </div>
@@ -89,13 +93,13 @@
 
 <section class="section" id="demo">
   <div class="container">
-    <div class="eyebrow reveal">MVP Screens</div>
-    <h2 class="section-title reveal">直接使用你們的實機畫面，把官網與產品本體接起來。</h2>
-    <p class="section-desc reveal">依照附檔截圖，產品核心介面是手機優先的三分頁：冒險、狀態、功能。新版官網不再只放示意圖，而是把 MVP 真實畫面放進產品頁，讓評審與使用者一眼看懂目前能玩什麼。</p>
+    <div class="eyebrow reveal">Playable Interface</div>
+    <h2 class="section-title reveal">介面不是裝飾，是玩家理解遊戲規則的方式。</h2>
+    <p class="section-desc reveal">這次已替換原本不貼近產品的示意圖，改用三張高度對齊實機 MVP 的遊戲畫面。</p>
     <div class="phone-shot-grid">
-      <figure class="phone-shot reveal"><img src="assets/images/screen-adventure.jpg" alt="Planar Table 手機冒險頁"><figcaption><strong>冒險</strong><span>AI DM 描述場景，玩家用快捷按鈕或自然語言推進劇情。</span></figcaption></figure>
-      <figure class="phone-shot reveal"><img src="assets/images/screen-status.jpg" alt="Planar Table 手機狀態頁"><figcaption><strong>狀態</strong><span>HP、等級、金幣、六圍屬性與持有物品即時同步。</span></figcaption></figure>
-      <figure class="phone-shot reveal"><img src="assets/images/screen-menu.jpg" alt="Planar Table 手機功能選單"><figcaption><strong>功能</strong><span>帳號、公告、藍圖、許願池與指南收束成冒險控制台。</span></figcaption></figure>
+      <figure class="phone-shot reveal"><img src="assets/images/screen-adventure-polished.webp" alt="Planar Table 冒險頁遊戲畫面"><figcaption><strong>冒險</strong><span>敘事卡、行動選項、自由輸入與等待指令，構成核心遊玩循環。</span></figcaption></figure>
+      <figure class="phone-shot reveal"><img src="assets/images/screen-status-polished.webp" alt="Planar Table 狀態頁角色與背包畫面"><figcaption><strong>狀態</strong><span>等級、金幣、HP、六項屬性與背包物品同步顯示，讓數值可信。</span></figcaption></figure>
+      <figure class="phone-shot reveal"><img src="assets/images/screen-menu-polished.webp" alt="Planar Table 功能頁選單畫面"><figcaption><strong>功能</strong><span>帳號、公告、藍圖、許願池、指南與支援中心，成為產品營運入口。</span></figcaption></figure>
     </div>
   </div>
 </section>
@@ -103,34 +107,39 @@
 <section class="section" id="mvp">
   <div class="container two-up">
     <article class="panel reveal">
-      <h3>MVP 已具備的可展示能力</h3>
+      <h3>MVP 已完成的核心功能</h3>
       <ul>
-        <li>互動式創角嚮導：使用者用較低門檻完成角色建立。</li>
-        <li>劇本選擇器：福爾摩沙傳奇、官方劇本、自訂開場與隨機劇本可承接不同玩家。</li>
-        <li>混合式物品管理：AI 生成物品後，仍可被規則層記錄與使用。</li>
-        <li>角色儀表板：HP、等級、金幣、六圍屬性、持有物品與狀態同步顯示。</li>
+        <li>互動式創角嚮導：把繁複的 D&amp;D 規則拆成可理解的步驟。</li>
+        <li>劇本模組選擇器：讓玩家快速開始，不必自行設定一切。</li>
+        <li>混合式物品管理：AI 臨場生成裝備後，仍能被系統數值化記錄。</li>
+        <li>動態儀表板：血量、角色等級與持有物品即時同步。</li>
       </ul>
     </article>
-    <article class="panel panel-accent reveal" id="rules">
-      <h3>對外最值得強調的一句話</h3>
-      <p class="big-line">「ChatGPT 可以講故事；Planar Table 會記得你還剩幾滴血。」</p>
-      <p>這句能快速區分通用 AI 與產品型 AI 遊戲：通用 AI 生成文本，Planar Table 則以資料結構維持遊戲後果。</p>
+    <article class="panel panel-accent reveal">
+      <h3>更像遊戲網站的資訊層</h3>
+      <ul>
+        <li>主視覺改為產品畫面，而非通用奇幻海報。</li>
+        <li>卡片內文字重新縮短，避免窄寬度下產生孤行。</li>
+        <li>所有比較與表格資訊改成可換行的響應式卡片。</li>
+        <li>圖片區塊固定比例與裁切位置，避免手機版高度失控。</li>
+      </ul>
     </article>
   </div>
 </section>
 
-<section class="section">
-  <div class="container feature-matrix reveal">
-    <div class="matrix-head"><span>玩家痛點</span><span>產品回應</span><span>官網呈現方式</span></div>
-    <div><strong>約不到團</strong><span>AI DM 全天候主持</span><em>首頁 hero / 單人冒險迴圈</em></div>
-    <div><strong>規則太厚</strong><span>創角嚮導與視覺化判定</span><em>產品頁 interface demo</em></div>
-    <div><strong>聊天 AI 不穩</strong><span>雙核引擎分離敘事與規則</span><em>engine-lab 對照圖</em></div>
-    <div><strong>缺少中文內容</strong><span>繁中詞庫與台灣題材劇本</span><em>劇本宇宙 / 市場頁</em></div>
+<section class="section" id="scenarios">
+  <div class="container">
+    <div class="eyebrow reveal">Scenario Shelf</div>
+    <h2 class="section-title reveal">首波劇本不是泛用地牢，而是能代表產品差異的島嶼奇幻。</h2>
+    <div class="scenario-grid">
+      <article class="scenario-card reveal"><span>FORMOSA 01</span><h3>百步蛇之盟</h3><p>以山林、部落傳說與守護誓約為靈感，讓玩家在尊重文化脈絡的前提下進入台灣幻想世界。</p></article>
+      <article class="scenario-card reveal"><span>FORMOSA 02</span><h3>失落的剪黏師</h3><p>從宮廟工藝、屋脊神獸與港城巷弄出發，將在地日常轉譯成可互動的冒險線索。</p></article>
+      <article class="scenario-card reveal"><span>SDGs 01</span><h3>淹沒城市</h3><p>把氣候變遷、資源分配與生存選擇轉化為玩家能參與決策的劇本模組。</p></article>
+    </div>
   </div>
 </section>
-</main>
-  
-<footer class="footer">
+  </main>
+  <footer class="footer">
   <div class="container footer-grid">
     <div>
       <div class="footer-brand">PLANAR TABLE</div>
@@ -143,12 +152,11 @@
       <a href="roadmap.html">藍圖</a>
     </div>
     <div class="footer-note">
-      <span>Theme alignment v3</span>
-      <span>已納入 MVP 實機截圖與提案內容</span>
+      <span>Theme alignment v4</span>
+      <span>已替換產品圖與修正響應式排版</span>
     </div>
   </div>
 </footer>
-
   <script src="assets/js/main.js"></script>
   
 </body>

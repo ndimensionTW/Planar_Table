@@ -1,29 +1,29 @@
-# Planar Table Custom Website v2
+# Planar Table Static Website v4
 
-這是一版重新客製化的 Planar Table 靜態官網，可直接部署到 GitHub Pages、Netlify、Vercel Static 或任何靜態主機。
+此版本已依照 MVP 實機截圖、簡報與創業營運計畫書重新整理網站，並加入新生成的產品主視覺與遊戲畫面。
 
-## 已改動重點
+## 這版修改重點
 
-- 重做首頁、產品、市場、團隊、藍圖五頁內容結構。
-- 導覽列補齊五頁，解決原本 market / roadmap 頁面存在但主導覽沒有入口的問題。
-- 重新設計品牌語彙：第 N 維度、異界桌、裂隙星圖、骰面金、預言青、島嶼玉。
-- 全部示意圖改為本地自製 SVG，不依賴外部圖庫或通用遊戲海報。
-- 加入 reveal 動畫、數字計數、客群 tabs、桌面卡片微視差。
-- 保留純 HTML/CSS/JS 架構，方便之後接 Demo、候補名單或 Next.js 遊戲本體。
-
-## 檔案
-
-- `index.html`：首頁
-- `product.html`：產品特色與介面
-- `market.html`：市場與商業模式
-- `team.html`：團隊介紹
-- `roadmap.html`：發展藍圖與 GTM
-- `assets/css/base.css`：主要品牌樣式
-- `assets/css/pages.css`：各頁專用樣式
-- `assets/js/main.js`：導覽、動畫、計數器、微視差
-- `assets/js/market.js`：市場頁客群 tabs
-- `assets/images/*.svg`：自製品牌插圖與 UI mockups
+- 替換首頁與產品頁中較不貼近產品的示意圖。
+- 新增 5 張客製化圖片：首頁主視覺、產品展示圖、冒險頁、狀態頁、功能頁。
+- 統一五頁導覽與頁尾：首頁、產品特色、市場商模、團隊介紹、發展藍圖。
+- 產品頁改成 MVP 導向：雙核引擎、三分頁手機介面、MVP 功能與劇本宇宙。
+- 市場頁將表格式競品比較改成響應式卡片，避免手機版資料跑出框外。
+- CSS 新增排版修正：文字行寬、中文換行、卡片最小寬度、圖片比例、表格橫向捲動與手機版間距。
 
 ## 使用方式
 
-直接開啟 `index.html` 即可預覽；部署時上傳整個資料夾。
+直接開啟 `index.html` 預覽；部署時上傳整個資料夾即可。
+
+## 主要檔案
+
+- `index.html`：首頁
+- `product.html`：產品特色與 MVP 畫面
+- `market.html`：市場與商業模式
+- `team.html`：團隊介紹
+- `roadmap.html`：發展藍圖
+- `assets/css/base.css`：主要品牌樣式
+- `assets/css/pages.css`：頁面與 v4 排版修正
+- `assets/js/main.js`：導覽、動畫、計數器
+- `assets/js/market.js`：市場頁 tabs
+- `assets/images/*.webp`：新版客製化網站圖片與遊戲畫面
