@@ -27,3 +27,12 @@
 - `assets/js/main.js`：導覽、動畫、計數器
 - `assets/js/market.js`：市場頁 tabs
 - `assets/images/*.webp`：新版客製化網站圖片與遊戲畫面
+
+
+## v7 修正重點
+
+- 修正 Product Identity 區塊文字與右側卡片重疊問題。
+- 修正 Team / Roadmap 頁首插圖被擠成窄直欄的問題。
+- 降低桌機版大標題尺寸，改成更專業的閱讀寬度。
+- 團隊卡片、顧問卡片與藍圖卡片統一間距與行高。
+- 保留 v5 新增的多場景圖片與 v6 的手機版排版修正。

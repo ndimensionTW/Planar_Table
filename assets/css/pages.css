@@ -1030,3 +1030,284 @@ body[data-page="team"] .team-card .tag {
     grid-template-columns: 1fr !important;
   }
 }
+
+/* v7 professional layout fix: prevent desktop overlap and squeezed artwork */
+html, body { max-width: 100%; overflow-x: hidden; }
+.container, .section, .page-hero-grid, .split-layout, .party-grid, .quest-map, .two-up, .custom-tokens {
+  min-width: 0 !important;
+}
+
+/* Page hero should read like a professional landing page, not a squeezed two-column poster. */
+.page-hero {
+  padding: clamp(52px, 7vw, 88px) 0 clamp(34px, 4vw, 56px) !important;
+}
+.page-hero-grid {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 380px) !important;
+  gap: clamp(28px, 4vw, 56px) !important;
+  align-items: center !important;
+}
+.page-hero .reveal,
+.page-hero .section-heading {
+  min-width: 0 !important;
+}
+.page-hero .section-title,
+.page-hero-title {
+  max-width: 15.5em !important;
+  font-size: clamp(2.45rem, 4.6vw, 3.9rem) !important;
+  line-height: 1.16 !important;
+  letter-spacing: -.035em !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  white-space: normal !important;
+  text-wrap: balance !important;
+}
+.page-hero-title span {
+  display: block !important;
+}
+.page-hero .page-lead {
+  max-width: 64ch !important;
+  line-height: 1.85 !important;
+}
+.page-hero-visual,
+.page-hero .image-card {
+  width: 100% !important;
+  max-width: 380px !important;
+  justify-self: end !important;
+  align-self: center !important;
+  overflow: hidden !important;
+}
+.page-hero-visual img,
+.page-hero .image-card > img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 4 / 3 !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  padding: 12px !important;
+  background: linear-gradient(180deg, rgba(10,17,32,.68), rgba(7,13,28,.92)) !important;
+}
+.page-hero .showcase-image,
+.page-hero-product .page-hero-visual {
+  max-width: 560px !important;
+}
+.page-hero .showcase-image img,
+.page-hero-product .page-hero-visual img {
+  aspect-ratio: 16 / 9 !important;
+  object-fit: cover !important;
+  padding: 0 !important;
+}
+.page-hero .caption {
+  writing-mode: horizontal-tb !important;
+  max-width: none !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  line-height: 1.65 !important;
+}
+
+/* Product Identity section: keep headline and token cards separated. */
+.split-layout {
+  grid-template-columns: minmax(0, .92fr) minmax(340px, .78fr) !important;
+  gap: clamp(34px, 5vw, 64px) !important;
+  align-items: center !important;
+}
+.split-layout .section-heading {
+  max-width: 660px !important;
+  min-width: 0 !important;
+}
+.split-layout .section-title,
+.split-title {
+  max-width: 13em !important;
+  font-size: clamp(2.15rem, 3.55vw, 3.45rem) !important;
+  line-height: 1.18 !important;
+  letter-spacing: -.035em !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  text-wrap: balance !important;
+}
+.split-title br { display: block !important; }
+.custom-tokens {
+  width: 100% !important;
+  max-width: 560px !important;
+  justify-self: end !important;
+}
+.token-card {
+  min-height: 136px !important;
+  padding: 22px !important;
+}
+.token-card span,
+.token-card strong {
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  white-space: normal !important;
+}
+
+/* Team page: readable cards, tighter vertical rhythm, no crushed hero graphic. */
+body[data-page="team"] .page-hero-grid,
+body[data-page="roadmap"] .page-hero-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px) !important;
+}
+body[data-page="team"] .page-hero .section-title,
+body[data-page="roadmap"] .page-hero .section-title {
+  max-width: 16em !important;
+  font-size: clamp(2.35rem, 4.4vw, 3.65rem) !important;
+}
+body[data-page="team"] .section:has(.party-grid),
+body[data-page="team"] .section:has(.two-up) {
+  padding-top: 44px !important;
+  padding-bottom: 44px !important;
+}
+body[data-page="team"] .party-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 22px !important;
+  align-items: stretch !important;
+}
+body[data-page="team"] .team-card {
+  padding: clamp(24px, 2.5vw, 32px) !important;
+  min-height: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  overflow: hidden !important;
+}
+body[data-page="team"] .role,
+body[data-page="team"] .team-card .role {
+  letter-spacing: .11em !important;
+  white-space: normal !important;
+  line-height: 1.35 !important;
+}
+body[data-page="team"] .team-card h3 {
+  font-size: clamp(1.25rem, 1.9vw, 1.55rem) !important;
+  margin-bottom: 12px !important;
+}
+body[data-page="team"] .team-card p,
+body[data-page="team"] .team-card li,
+body[data-page="team"] .panel p,
+body[data-page="team"] .panel li {
+  font-size: .98rem !important;
+  line-height: 1.78 !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+}
+body[data-page="team"] .team-card ul {
+  margin-top: 14px !important;
+  margin-bottom: 20px !important;
+}
+body[data-page="team"] .team-card .tag {
+  margin-top: auto !important;
+  align-self: flex-start !important;
+  white-space: normal !important;
+}
+body[data-page="team"] .two-up {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 22px !important;
+}
+body[data-page="team"] .team-note {
+  max-width: 920px !important;
+  margin-inline: auto !important;
+}
+
+/* Roadmap: two-column mission cards are more readable than four cramped cards. */
+body[data-page="roadmap"] .quest-map {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 22px !important;
+}
+body[data-page="roadmap"] .quest-map::before { display: none !important; }
+body[data-page="roadmap"] .quest-card {
+  min-height: 0 !important;
+  padding: clamp(24px, 2.5vw, 32px) !important;
+}
+body[data-page="roadmap"] .quest-card::before {
+  margin-bottom: 18px !important;
+}
+body[data-page="roadmap"] .phase {
+  white-space: normal !important;
+  line-height: 1.45 !important;
+}
+
+/* Shared text safeguards. */
+.section-title,
+.hero-copy h1,
+.panel h3,
+.team-card h3,
+.quest-card h3,
+.scenario-card h3 {
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  white-space: normal;
+}
+.panel,
+.team-card,
+.quest-card,
+.scenario-card,
+.scene-tile,
+.phone-shot,
+.image-card {
+  min-width: 0 !important;
+}
+
+@media (max-width: 1180px) {
+  .split-layout,
+  .page-hero-grid,
+  body[data-page="team"] .page-hero-grid,
+  body[data-page="roadmap"] .page-hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .page-hero-visual,
+  .page-hero .image-card,
+  .custom-tokens {
+    justify-self: start !important;
+    max-width: 720px !important;
+  }
+  .split-layout .section-title,
+  .split-title,
+  .page-hero .section-title,
+  .page-hero-title {
+    max-width: 18em !important;
+  }
+}
+@media (max-width: 860px) {
+  body[data-page="team"] .party-grid,
+  body[data-page="team"] .two-up,
+  body[data-page="roadmap"] .quest-map {
+    grid-template-columns: 1fr !important;
+  }
+  .page-hero .section-title,
+  .page-hero-title,
+  .split-layout .section-title,
+  .split-title {
+    font-size: clamp(2rem, 8vw, 3rem) !important;
+    line-height: 1.18 !important;
+  }
+}
+@media (max-width: 620px) {
+  .page-hero {
+    padding-top: 42px !important;
+  }
+  .custom-tokens {
+    grid-template-columns: 1fr !important;
+  }
+  .split-title br,
+  .page-hero-title span {
+    display: inline !important;
+  }
+  .page-hero .image-card,
+  .page-hero-visual {
+    max-width: 100% !important;
+  }
+  .page-hero .image-card > img,
+  .page-hero-visual img {
+    aspect-ratio: 16 / 10 !important;
+  }
+}
+
+/* v7 mobile overflow guard: reset browser default figure margins. */
+figure,
+.image-card,
+.page-hero .image-card,
+.phone-shot,
+.scene-tile {
+  margin: 0 !important;
+}
