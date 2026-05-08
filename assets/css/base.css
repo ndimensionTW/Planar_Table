@@ -244,3 +244,45 @@ button { color: inherit; }
   .badge, .pill { width: 100%; justify-content: flex-start; }
   .board-status { display: grid; }
 }
+
+/* Theme alignment v3: match MVP screenshots and Planar Table proposal tone. */
+:root {
+  --pt-void: #050716;
+  --pt-navy: #101827;
+  --pt-panel: #172435;
+  --pt-gold: #ffc83d;
+  --pt-gold-2: #ffe28a;
+  --pt-muted: #8fa0bb;
+}
+body {
+  background:
+    radial-gradient(circle at 16% -4%, rgba(255,200,61,.11), transparent 34%),
+    radial-gradient(circle at 88% 10%, rgba(60,124,196,.12), transparent 32%),
+    linear-gradient(180deg, var(--pt-void), #0b1324 60%, #080d1d);
+}
+.text-gradient,
+.planar-menu-title {
+  background: linear-gradient(180deg, #ffe88e 0%, var(--pt-gold) 55%, #f1a92b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.site-header {
+  background: rgba(5,7,22,.82);
+  border-bottom-color: rgba(112,132,165,.24);
+}
+.btn-primary {
+  background: linear-gradient(135deg, var(--pt-gold), var(--pt-gold-2));
+}
+.badge,
+.panel,
+.image-card,
+.loop-card,
+.metric,
+.tier,
+.team-card,
+.timeline-card,
+.pain-card {
+  background: linear-gradient(180deg, rgba(24,37,56,.78), rgba(16,26,43,.82));
+  border-color: rgba(112,132,165,.26);
+}
