@@ -356,3 +356,100 @@ h1, h2, h3, .section-title, .big-line, .hero-copy h1 {
 .image-card, .image-card img, .hero-board, .hero-board img {
   max-width: 100%;
 }
+
+/* v5: richer scene imagery and wide-desktop layout fixes */
+@media (min-width: 1280px) {
+  .feature-badges {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 14px;
+    max-width: 100%;
+  }
+  .feature-badges .badge {
+    min-width: 0;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+}
+.feature-badges .badge strong {
+  white-space: nowrap;
+}
+.scene-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 30px;
+}
+.scene-tile {
+  margin: 0;
+  padding: 14px;
+  border-radius: 28px;
+  border: 1px solid rgba(112,132,165,.28);
+  background: linear-gradient(180deg, rgba(24,37,56,.86), rgba(10,17,32,.94));
+  box-shadow: var(--shadow);
+}
+.scene-tile img,
+.scenario-card img,
+.scene-band-figure img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  border: 1px solid rgba(255,200,61,.16);
+  background: #07111f;
+}
+.scene-tile figcaption {
+  display: grid;
+  gap: 8px;
+  padding: 14px 4px 2px;
+}
+.scene-tile strong,
+.scene-band-figure strong {
+  color: var(--gold-2);
+  font-size: 1.08rem;
+}
+.scene-tile span {
+  color: var(--ink-soft);
+}
+.scenario-card {
+  overflow: hidden;
+}
+.scenario-card img {
+  margin-bottom: 16px;
+}
+.scene-band {
+  margin-top: 24px;
+}
+.scene-band-figure {
+  margin: 0;
+}
+.scene-band-figure .caption {
+  padding-top: 16px;
+}
+@media (min-width: 1450px) {
+  .hero-grid-wide {
+    grid-template-columns: minmax(0, 1fr) minmax(560px, .95fr);
+    gap: 44px;
+  }
+}
+@media (max-width: 980px) {
+  .scene-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 620px) {
+  .scene-tile,
+  .scene-band-figure {
+    border-radius: 22px;
+  }
+  .scene-tile img,
+  .scenario-card img,
+  .scene-band-figure img {
+    border-radius: 16px;
+  }
+}
