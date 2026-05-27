@@ -112,7 +112,6 @@
   .phone-shot { max-width: 420px; margin-inline: auto; }
 }
 
-/* v4 layout and media refinements */
 html { -webkit-text-size-adjust: 100%; }
 body {
   line-break: strict;
@@ -343,12 +342,10 @@ th, td {
   .price { font-size: 2rem; }
 }
 
-/* Reveal is visible without JavaScript; animation only activates when .js is present. */
 .reveal { opacity: 1; transform: none; }
 .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
 .js .reveal.visible { opacity: 1; transform: translateY(0); }
 
-/* v4 overflow hotfix: allow Traditional Chinese headings to wrap naturally. */
 h1, h2, h3, .section-title, .big-line, .hero-copy h1 {
   word-break: normal;
   overflow-wrap: break-word;
@@ -357,7 +354,6 @@ h1, h2, h3, .section-title, .big-line, .hero-copy h1 {
   max-width: 100%;
 }
 
-/* v5: richer scene imagery and wide-desktop layout fixes */
 @media (min-width: 1280px) {
   .feature-badges {
     display: grid;
@@ -454,7 +450,6 @@ h1, h2, h3, .section-title, .big-line, .hero-copy h1 {
   }
 }
 
-/* v6: fix headline wrapping, desktop badge layout, and team-card readability */
 .hero-copy h1.hero-title {
   font-size: clamp(2.65rem, 4.7vw, 4.55rem);
   line-height: 1.06;
@@ -567,7 +562,6 @@ h1, h2, h3, .section-title, .big-line, .hero-copy h1 {
   }
 }
 
-/* v6: typography and desktop card layout corrections */
 .hero-grid-wide {
   gap: 32px;
 }
@@ -687,7 +681,6 @@ h1, h2, h3, .section-title, .big-line, .hero-copy h1 {
   }
 }
 
-/* v6: fix desktop headline wrapping, badge layout, and team card readability */
 .hero-copy h1.hero-title {
   font-size: clamp(3rem, 4.35vw, 5.05rem);
   line-height: 1.06;
@@ -794,7 +787,6 @@ body[data-page="team"] .role {
   }
 }
 
-/* v6: typography and overflow repair pass */
 .hero-copy h1.hero-title {
   max-width: 8.6em;
   font-size: clamp(3rem, 4.7vw, 5rem);
@@ -869,7 +861,6 @@ body[data-page="team"] .role {
   }
 }
 
-/* Team card readability: avoid cramped four-column cards on normal desktop widths. */
 .party-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: stretch;
@@ -912,7 +903,6 @@ body[data-page="team"] .role {
   }
 }
 
-/* General readable-width safeguards */
 .hero-copy,
 .section-heading,
 .page-lead,
@@ -939,7 +929,6 @@ body[data-page="team"] .role {
   overflow-wrap: break-word;
 }
 
-/* v6 final hotfix: stable desktop composition and no orphan headline words */
 .hero-copy h1.hero-title {
   max-width: 12em !important;
   font-size: clamp(2.75rem, 4vw, 4.35rem) !important;
@@ -1031,13 +1020,11 @@ body[data-page="team"] .team-card .tag {
   }
 }
 
-/* v7 professional layout fix: prevent desktop overlap and squeezed artwork */
 html, body { max-width: 100%; overflow-x: hidden; }
 .container, .section, .page-hero-grid, .split-layout, .party-grid, .quest-map, .two-up, .custom-tokens {
   min-width: 0 !important;
 }
 
-/* Page hero should read like a professional landing page, not a squeezed two-column poster. */
 .page-hero {
   padding: clamp(52px, 7vw, 88px) 0 clamp(34px, 4vw, 56px) !important;
 }
@@ -1107,7 +1094,6 @@ html, body { max-width: 100%; overflow-x: hidden; }
   line-height: 1.65 !important;
 }
 
-/* Product Identity section: keep headline and token cards separated. */
 .split-layout {
   grid-template-columns: minmax(0, .92fr) minmax(340px, .78fr) !important;
   gap: clamp(34px, 5vw, 64px) !important;
@@ -1144,7 +1130,6 @@ html, body { max-width: 100%; overflow-x: hidden; }
   white-space: normal !important;
 }
 
-/* Team page: readable cards, tighter vertical rhythm, no crushed hero graphic. */
 body[data-page="team"] .page-hero-grid,
 body[data-page="roadmap"] .page-hero-grid {
   grid-template-columns: minmax(0, 1fr) minmax(280px, 360px) !important;
@@ -1209,7 +1194,6 @@ body[data-page="team"] .team-note {
   margin-inline: auto !important;
 }
 
-/* Roadmap: two-column mission cards are more readable than four cramped cards. */
 body[data-page="roadmap"] .quest-map {
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   gap: 22px !important;
@@ -1227,7 +1211,6 @@ body[data-page="roadmap"] .phase {
   line-height: 1.45 !important;
 }
 
-/* Shared text safeguards. */
 .section-title,
 .hero-copy h1,
 .panel h3,
@@ -1303,7 +1286,6 @@ body[data-page="roadmap"] .phase {
   }
 }
 
-/* v7 mobile overflow guard: reset browser default figure margins. */
 figure,
 .image-card,
 .page-hero .image-card,

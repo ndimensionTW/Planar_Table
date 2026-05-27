@@ -253,7 +253,6 @@ button { color: inherit; }
   .board-status { display: grid; }
 }
 
-/* Theme alignment v3: match MVP screenshots and Planar Table proposal tone. */
 :root {
   --pt-void: #050716;
   --pt-navy: #101827;
